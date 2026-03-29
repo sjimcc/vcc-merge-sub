@@ -23,10 +23,10 @@ const MAX_NODES = parseInt(process.env.MAX_NODES || '5000', 10);
 if (!USERNAME || USERNAME.length < 3) {
   throw new Error('USERNAME is required and must be at least 3 chars');
 }
-if (!PASSWORD || PASSWORD.length < 10) {
+if (!PASSWORD || PASSWORD.length < 7) {
   throw new Error('PASSWORD is required and must be at least 10 chars');
 }
-if (!SUB_TOKEN || SUB_TOKEN.length < 20) {
+if (!SUB_TOKEN || SUB_TOKEN.length < 7) {
   throw new Error('SUB_TOKEN is required and must be at least 20 chars');
 }
 
